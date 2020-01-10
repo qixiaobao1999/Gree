@@ -63,13 +63,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 19, ../sass/index.scss */
+/* line 21, ../sass/index.scss */
 #header, #recommend, #choiceness, #refrigerator, #calorifier, #electric, #live, #phone, #conditioner, #video, #bigmap, #footer {
   width: 1200px;
   margin: 0 auto;
 }
 
-/* line 23, ../sass/index.scss */
+/* line 25, ../sass/index.scss */
 body {
   background-color: #f5f5f5;
 }
@@ -109,7 +109,7 @@ li a {
 /* line 28, ../sass/_top.scss */
 li span {
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 8px;
   font-size: 12px;
   color: #ccc;
 }
@@ -324,23 +324,25 @@ li span {
   width: 426px;
   height: 35px;
   border: none;
+  outline: none;
   border-left: 1px solid #ccc;
   background-color: #f5f5f5;
   font-size: 14px;
 }
-/* line 88, ../sass/_header.scss */
+/* line 89, ../sass/_header.scss */
 .sosuo .bt {
   position: relative;
   float: left;
+  cursor: move;
 }
-/* line 91, ../sass/_header.scss */
+/* line 93, ../sass/_header.scss */
 .sosuo .bt .bt_fdj {
   width: 70px;
   height: 38px;
   background-color: #cc0000;
-  border-radius: 20px;
+  border-radius: 18px;
 }
-/* line 96, ../sass/_header.scss */
+/* line 98, ../sass/_header.scss */
 .sosuo .bt .bt_fdj .icon-fangdajing {
   color: white;
   font-size: 20px;
@@ -349,51 +351,51 @@ li span {
   top: 9px;
 }
 
-/* line 106, ../sass/_header.scss */
+/* line 108, ../sass/_header.scss */
 .bottom {
   width: 640px;
   height: 30px;
   margin-top: 65px;
   margin-left: 18px;
 }
-/* line 111, ../sass/_header.scss */
+/* line 113, ../sass/_header.scss */
 .bottom a {
   text-decoration: none;
 }
-/* line 114, ../sass/_header.scss */
+/* line 116, ../sass/_header.scss */
 .bottom a span {
   font-size: 12px;
   color: #747474;
   line-height: 30px;
   margin-right: 15px;
 }
-/* line 121, ../sass/_header.scss */
+/* line 123, ../sass/_header.scss */
 .bottom span:hover {
   color: #cc0000;
 }
 
-/* line 126, ../sass/_header.scss */
+/* line 128, ../sass/_header.scss */
 #header .right {
   float: right;
-  margin-top: 26px;
+  margin-top: 20px;
   margin-right: 50px;
   position: relative;
 }
-/* line 131, ../sass/_header.scss */
+/* line 133, ../sass/_header.scss */
 #header .right .rg {
   width: 140px;
   height: 40px;
   border: 1px solid #ccc;
   border-radius: 20px;
 }
-/* line 136, ../sass/_header.scss */
+/* line 138, ../sass/_header.scss */
 #header .right .rg img {
   margin-left: 20px;
   margin-top: 10px;
   width: 26px;
   height: 24px;
 }
-/* line 143, ../sass/_header.scss */
+/* line 145, ../sass/_header.scss */
 #header .right span {
   position: absolute;
   left: 58px;
@@ -402,7 +404,7 @@ li span {
   color: #666;
 }
 
-/* line 151, ../sass/_header.scss */
+/* line 153, ../sass/_header.scss */
 #header .right .gwc {
   width: 400px;
   height: 100px;
@@ -414,20 +416,20 @@ li span {
   top: 46px;
   z-index: 999;
 }
-/* line 161, ../sass/_header.scss */
+/* line 163, ../sass/_header.scss */
 #header .right .gwc .content {
   width: 380px;
   height: 30px;
   margin: 10px;
   background-color: #fafafa;
 }
-/* line 166, ../sass/_header.scss */
+/* line 168, ../sass/_header.scss */
 #header .right .gwc .content p {
   font-size: 12px;
   color: #cc0000;
   line-height: 30px;
 }
-/* line 172, ../sass/_header.scss */
+/* line 174, ../sass/_header.scss */
 #header .right .gwc .wenzi {
   height: 68px;
   font-size: 10px;
@@ -437,28 +439,283 @@ li span {
   color: #d8d2d2;
 }
 
-/* line 181, ../sass/_header.scss */
+/* line 183, ../sass/_header.scss */
 #header .right .gwc {
   display: none;
 }
 
-/* line 184, ../sass/_header.scss */
+/* line 186, ../sass/_header.scss */
 #header .right:hover .gwc {
   display: block;
 }
 
-/* line 32, ../sass/index.scss */
+/* line 2, ../sass/_navigation.scss */
 #navigation {
   width: 100%;
   height: 36px;
-  background-color: #adc;
+  background-color: #f5f5f5;
+}
+/* line 6, ../sass/_navigation.scss */
+#navigation .category {
+  width: 1200px;
+  height: 36px;
+  margin-left: 159px;
+  display: flex;
+}
+/* line 11, ../sass/_navigation.scss */
+#navigation .category .cleft {
+  height: 36px;
+  background-color: gold;
+  display: flex;
+  position: relative;
+}
+/* line 18, ../sass/_navigation.scss */
+#navigation .category .cringht {
+  height: 36px;
+  display: flex;
+  margin-left: 30px;
 }
 
-/* line 38, ../sass/index.scss */
+/* line 25, ../sass/_navigation.scss */
+.cleft .cleft_lt {
+  width: 174px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cc0000;
+}
+/* line 31, ../sass/_navigation.scss */
+.cleft .cleft_lt .icon-list2 {
+  font-size: 20px;
+  color: white;
+  margin-left: 5px;
+}
+/* line 36, ../sass/_navigation.scss */
+.cleft .cleft_lt p {
+  margin-left: 12px;
+  font-size: 12px;
+  color: white;
+}
+
+/* line 42, ../sass/_navigation.scss */
+.classify {
+  width: 174px;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  left: 0;
+  top: 36px;
+  z-index: 999;
+}
+/* line 51, ../sass/_navigation.scss */
+.classify li {
+  height: 40px;
+  display: flex;
+}
+/* line 54, ../sass/_navigation.scss */
+.classify li p {
+  width: 150px;
+  height: 40px;
+}
+/* line 58, ../sass/_navigation.scss */
+.classify li .iconfont {
+  color: white;
+  font-size: 16px;
+  line-height: 40px;
+}
+/* line 63, ../sass/_navigation.scss */
+.classify li a {
+  font-size: 12px;
+  color: white;
+  line-height: 38px;
+}
+/* line 68, ../sass/_navigation.scss */
+.classify li .icon-youjiantou {
+  font-size: 10px;
+}
+/* line 72, ../sass/_navigation.scss */
+.classify li:hover {
+  background-color: white;
+}
+/* line 75, ../sass/_navigation.scss */
+.classify li:hover a {
+  color: #cc0000;
+}
+/* line 78, ../sass/_navigation.scss */
+.classify li:hover .icon-youjiantou {
+  color: #cc0000;
+}
+
+/* line 83, ../sass/_navigation.scss */
+.classify .listdiv {
+  width: 990px;
+  z-index: 99;
+  position: absolute;
+  left: 174px;
+  top: 0;
+  display: none;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+/* line 93, ../sass/_navigation.scss */
+.classify .listdiv .dl {
+  width: 660px;
+  height: 50px;
+  margin: 20px 40px 20px 30px;
+  display: flex;
+}
+/* line 98, ../sass/_navigation.scss */
+.classify .listdiv .dl .dd {
+  width: 125px;
+  line-height: 50px;
+}
+/* line 101, ../sass/_navigation.scss */
+.classify .listdiv .dl .dd span {
+  font-size: 16px;
+  color: #747474;
+}
+/* line 105, ../sass/_navigation.scss */
+.classify .listdiv .dl .dd span:hover {
+  color: #cc0000;
+}
+/* line 109, ../sass/_navigation.scss */
+.classify .listdiv .dl .dt {
+  width: 438px;
+  line-height: 50px;
+  margin-left: 20px;
+  color: #747474;
+  border-bottom: 1px solid #ccc;
+}
+/* line 116, ../sass/_navigation.scss */
+.classify .listdiv .dl .dt:hover {
+  color: #cc0000;
+}
+
+/* line 121, ../sass/_navigation.scss */
+.classify li:hover .listdiv {
+  display: block;
+}
+
+/* line 124, ../sass/_navigation.scss */
+.listdiv .listringht {
+  width: 300px;
+  height: 450px;
+  background-color: #f5f5f5;
+  position: absolute;
+  left: 689px;
+  top: 0;
+}
+/* line 131, ../sass/_navigation.scss */
+.listdiv .listringht h1 {
+  margin-left: 84px;
+  font-size: 17px;
+  color: #424242;
+  margin-top: 20px;
+}
+/* line 137, ../sass/_navigation.scss */
+.listdiv .listringht ul {
+  width: 260px;
+  height: 394px;
+  margin: 10px 20px 10px 20px;
+}
+/* line 142, ../sass/_navigation.scss */
+.listdiv .listringht ul li {
+  width: 125px;
+  height: 187px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: white;
+}
+/* line 150, ../sass/_navigation.scss */
+.listdiv .listringht ul #li2,
+.listdiv .listringht ul #li4 {
+  margin-right: 0px;
+}
+
+/* line 157, ../sass/_navigation.scss */
+#liimgs img {
+  display: inline-block;
+  width: 114px;
+  height: 114px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+/* line 164, ../sass/_navigation.scss */
+#liimgs h3 {
+  width: 114px;
+  margin-top: 3px;
+  margin-left: 5px;
+  font-size: 10px;
+  height: 20px;
+  color: #424242;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 175, ../sass/_navigation.scss */
+#liimgs p {
+  margin-left: 32px;
+  margin-top: 12px;
+}
+
+/* line 182, ../sass/_navigation.scss */
+#navigation .cringht ul {
+  display: flex;
+}
+/* line 184, ../sass/_navigation.scss */
+#navigation .cringht ul li {
+  height: 36px;
+  margin-right: 30px;
+}
+/* line 187, ../sass/_navigation.scss */
+#navigation .cringht ul li a {
+  color: #424242;
+  line-height: 36px;
+  font-size: 14px;
+}
+/* line 192, ../sass/_navigation.scss */
+#navigation .cringht ul li a:hover {
+  color: #707070;
+}
+
+/* line 36, ../sass/index.scss */
 #slideshow {
   width: 100%;
   height: 450px;
-  background-color: red;
+  position: relative;
+}
+/* line 40, ../sass/index.scss */
+#slideshow .pics ul li img {
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 48, ../sass/index.scss */
+#slideshow ol {
+  position: absolute;
+  left: 45%;
+  bottom: 20px;
+}
+/* line 52, ../sass/index.scss */
+#slideshow ol li {
+  width: 10px;
+  height: 10px;
+  border-radius: 6px;
+  border: 2px solid #fff;
+  text-indent: -999em;
+  margin: 0 4px;
+  cursor: pointer;
+  opacity: 0.4;
+  float: left;
+}
+/* line 63, ../sass/index.scss */
+#slideshow ol .active {
+  background-color: #fff;
+  opacity: 1;
 }
 
 /* line 1, ../sass/_recommend.scss */
@@ -507,56 +764,56 @@ li:last-child {
   color: #757575;
 }
 
-/* line 47, ../sass/index.scss */
+/* line 73, ../sass/index.scss */
 #choiceness {
   height: 570px;
   margin-bottom: 30px;
   background-color: green;
 }
 
-/* line 54, ../sass/index.scss */
+/* line 80, ../sass/index.scss */
 #refrigerator {
   height: 616px;
   margin-bottom: 30px;
   background-color: purple;
 }
 
-/* line 61, ../sass/index.scss */
+/* line 87, ../sass/index.scss */
 #calorifier {
   height: 616px;
   margin-bottom: 30px;
   background-color: yellow;
 }
 
-/* line 68, ../sass/index.scss */
+/* line 94, ../sass/index.scss */
 #electric {
   height: 616px;
   margin-bottom: 30px;
   background-color: purple;
 }
 
-/* line 75, ../sass/index.scss */
+/* line 101, ../sass/index.scss */
 #live {
   height: 616px;
   margin-bottom: 30px;
   background-color: red;
 }
 
-/* line 82, ../sass/index.scss */
+/* line 108, ../sass/index.scss */
 #phone {
   height: 616px;
   margin-bottom: 30px;
   background-color: #adc;
 }
 
-/* line 89, ../sass/index.scss */
+/* line 115, ../sass/index.scss */
 #conditioner {
   height: 616px;
   margin-bottom: 30px;
   background-color: yellow;
 }
 
-/* line 96, ../sass/index.scss */
+/* line 122, ../sass/index.scss */
 #video {
   height: 616px;
   margin-bottom: 30px;
@@ -599,7 +856,7 @@ li:last-child {
   opacity: 0.8;
 }
 
-/* line 105, ../sass/index.scss */
+/* line 132, ../sass/index.scss */
 #footer {
   height: 378.6px;
   margin-bottom: 30px;

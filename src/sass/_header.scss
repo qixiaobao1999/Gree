@@ -80,6 +80,7 @@
         width: 426px;
         height: 35px;
         border: none;
+        outline: none;
         border-left: 1px solid #ccc;
         background-color: #f5f5f5;
         font-size: 14px;
@@ -88,11 +89,12 @@
     .bt {
       position: relative;
       float: left;
+      cursor: move;
       .bt_fdj {
         width: 70px;
         height: 38px;
         background-color: #cc0000;
-        border-radius: 20px;
+        border-radius: 18px;
         .icon-fangdajing {
           color: white;
           font-size: 20px;
@@ -125,7 +127,7 @@
   //右边购物车的结构样式
   #header .right {
     float: right;
-    margin-top: 26px;
+    margin-top: 20px;
     margin-right: 50px;
     position: relative;
     .rg {
