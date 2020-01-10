@@ -1,0 +1,29 @@
+#bigmap {
+    @extend %divv;
+    margin-bottom: $margins;
+    .img1:hover {
+      border: none;
+      outline: none;
+      width: $div_width;
+      opacity: $opacitys;
+    }
+    ul {
+      margin-top: 26px;
+      overflow: hidden;
+      padding: 40px 0;
+      background-color: #fff;
+    }
+  }
+  #bigmap ul li{
+      width: 25%;
+      border-right: 1px solid #dedede;
+      padding: 0 25px;
+      box-sizing: border-box;
+      float: left;
+  }
+  #bigmap ul li .img2:hover{
+      width: 249px;
+      display: block;
+      cursor: move;
+      opacity: $opacitys;
+  }

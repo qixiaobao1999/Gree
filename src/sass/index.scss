@@ -1,0 +1,184 @@
+@charset "utf-8";
+@import "compass/reset"; //重置
+
+$page_width: 100%;
+$div_width: 1200px;
+$div_height: 616px;
+$margins: 30px;
+$divmargin: 0 auto;
+$opacitys: 0.8;
+$colors: (
+  a: #adc,
+  b: red,
+  c: blue,
+  d: green,
+  f: #ff00,
+  g: yellow,
+  h: purple
+);
+%divv {
+  width: $div_width;
+  margin: 0 auto;
+}
+body {
+  background-color: #f5f5f5;
+}
+//顶部
+@import "top";
+//头部加搜索框
+//左边logo的样式
+#header {
+  @extend %divv;
+  background-color: #f5f5f5;
+  height: 110px;
+  overflow: hidden;
+  .left {
+    float: left;
+    width: 200px;
+    height: 80px;
+    margin-top: 10px;
+    #left_img {
+      width: 174px;
+      img {
+        width: 100%;
+        height: 80px;
+        display: block;
+        cursor: move;
+      }
+    }
+  }
+}
+//中间搜索部分的样式
+.middle {
+  float: left;
+  width: 740px;
+  height: 96px;
+  margin-left: 28px;
+  background-color: pink;
+  overflow: hidden;
+  .sosuo {
+    margin-top: 20px;
+    width: 564px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #cc0000;
+    outline: 0;
+  }
+}
+
+//导航菜单
+#navigation {
+  width: $page_width;
+  height: 36px;
+  background-color: map-get($colors, a);
+}
+//轮播图
+#slideshow {
+  width: $page_width;
+  height: 450px;
+  background-color: map-get($colors, b);
+}
+//热销推荐
+#recommend {
+  @extend %divv;
+  height: 218px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  ul {
+    margin-top: 10px;
+    width: $div_width;
+    margin-right: 10px;
+    background-color: brown;
+    li {
+      width: 290px;
+      height: 180px;
+      float: left;
+      margin-right: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+  }
+  img:hover {
+    opacity: $opacitys;
+  }
+}
+li:last-child {
+  margin-right: 0;
+}
+.title {
+  width: $div_width;
+  height: 24px;
+  font-size: 18px;
+  margin: 14px 0;
+  color: #757575;
+}
+//每日精选
+#choiceness {
+  @extend %divv;
+  height: 570px;
+  margin-bottom: $margins;
+  background-color: map-get($colors, d);
+}
+//冰箱洗衣机
+#refrigerator {
+  @extend %divv;
+  height: $div_height;
+  margin-bottom: $margins;
+  background-color: map-get($colors, h);
+}
+//空气能热水器
+#calorifier {
+  @extend %divv;
+  height: $div_height;
+  margin-bottom: $margins;
+  background-color: map-get($colors, g);
+}
+//厨房电器
+#electric {
+  @extend %divv;
+  height: $div_height;
+  margin-bottom: $margins;
+  background-color: map-get($colors, h);
+}
+//生活电器
+#live {
+  @extend %divv;
+  height: $div_height;
+  margin-bottom: $margins;
+  background-color: map-get($colors, b);
+}
+//格力手机
+#phone {
+  @extend %divv;
+  height: $div_height;
+  margin-bottom: $margins;
+  background-color: map-get($colors, a);
+}
+//家用空调
+#conditioner {
+  @extend %divv;
+  height: $div_height;
+  margin-bottom: $margins;
+  background-color: map-get($colors, g);
+}
+//视频
+#video {
+  @extend %divv;
+  height: $div_height;
+  margin-bottom: $margins;
+  background-color: map-get($colors, h);
+}
+//尾部大头图
+@import "bigmap";
+//尾部结构
+#footer {
+  @extend %divv;
+  height: 378.6px;
+  margin-bottom: $margins;
+  border-top: 1px solid #ccc;
+  background-color: map-get($colors, g);
+}
