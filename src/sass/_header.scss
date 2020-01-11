@@ -3,7 +3,6 @@
     @extend %divv;
     background-color: #f5f5f5;
     height: 110px;
-    // overflow: hidden;
     .left {
       float: left;
       width: 210px;
@@ -23,14 +22,11 @@
   //中间搜索部分的样式
   .middle {
     float: left;
-    width: 740px;
     height: 96px;
     margin-left: 28px;
-    // overflow: hidden;
     .sosuo {
       float: left;
-      margin-top: 20px;
-      width: 564px;
+      margin-top: 25px;
       height: 38px;
       border-radius: 20px;
       border: 1px solid #cc0000;
@@ -39,7 +35,7 @@
     .middle_img {
       float: left;
       width: 144px;
-      margin-top: 20px;
+      margin-top: 25px;
       margin-left: 30px;
       height: 40px;
       img {
@@ -54,7 +50,6 @@
   }
   .sosuo {
     .sp {
-      width: 68px;
       height: 38px;
       background-color: #f5f5f5;
       border-radius: 20px;
@@ -73,7 +68,6 @@
       }
     }
     .ipt {
-      width: 426px;
       height: 38px;
       float: left;
       input {
@@ -106,7 +100,6 @@
     }
   }
   .bottom {
-    width: 640px;
     height: 30px;
     margin-top: 65px;
     margin-left: 18px;
@@ -161,7 +154,6 @@
     top: 46px;
     z-index: 999;
     .content {
-      width: 380px;
       height: 30px;
       margin: 10px;
       background-color: #fafafa;
@@ -172,7 +164,6 @@
       }
     }
     .wenzi {
-      height: 68px;
       font-size: 10px;
       line-height: 68px;
       text-align: center;
