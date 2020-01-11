@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!---------------------------顶部------------------------------ -->
     <div id="top">
         <div class="topwrap">
@@ -1327,6 +1328,7 @@
             </li>
         </ul>
     </div>
+
     <!-- ---------------------------------视频------------------------------------- -->
     <div id="video">
         <h3>视频</h3>
@@ -1394,6 +1396,12 @@
     <div id="footer">
 
     </div>
+    <!-- 引入的公共尾部结构 -->
+    <script>
+        !function ($) {
+            $("#footer").load("footer.html");
+        }(jQuery);
+    </script>
 </body>
 
 </html>

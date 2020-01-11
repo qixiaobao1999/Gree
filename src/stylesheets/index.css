@@ -1846,7 +1846,12 @@ li:last-child {
   color: #cc0000;
   cursor: move;
 }
-/* line 21, ../sass/_louti.scss */
+/* line 20, ../sass/_louti.scss */
+#louti ul .yanse {
+  background-color: #cc0000;
+  color: white;
+}
+/* line 25, ../sass/_louti.scss */
 #louti span {
   font-size: 16px;
   color: #cc0000;
@@ -1909,7 +1914,7 @@ li:last-child {
 
 /* line 1, ../sass/_bigmap.scss */
 #bigmap {
-  margin-bottom: 30px;
+  overflow: hidden;
 }
 /* line 4, ../sass/_bigmap.scss */
 #bigmap .img1:hover {
@@ -1925,8 +1930,12 @@ li:last-child {
   padding: 40px 0;
   background-color: #fff;
 }
+/* line 15, ../sass/_bigmap.scss */
+#bigmap ul li:last-child {
+  border-right: 0;
+}
 
-/* line 17, ../sass/_bigmap.scss */
+/* line 20, ../sass/_bigmap.scss */
 #bigmap ul li {
   width: 25%;
   border-right: 1px solid #dedede;
@@ -1935,18 +1944,72 @@ li:last-child {
   float: left;
 }
 
-/* line 24, ../sass/_bigmap.scss */
-#bigmap ul li .img2:hover {
-  width: 249px;
+/* line 27, ../sass/_bigmap.scss */
+#bigmap ul li {
+  width: 300px;
   display: block;
   cursor: move;
+}
+/* line 32, ../sass/_bigmap.scss */
+#bigmap ul li .img2:hover {
   opacity: 0.8;
 }
 
-/* line 52, ../sass/index.scss */
+/* line 1, ../sass/_footer.scss */
 #footer {
   height: 378.6px;
   margin-bottom: 30px;
   border-top: 1px solid #ccc;
-  background-color: pink;
+  background-color: white;
+}
+/* line 7, ../sass/_footer.scss */
+#footer ul {
+  width: 960px;
+  height: 226.6px;
+  margin: 0 auto;
+  padding: 37px 90px 0px 150px;
+}
+/* line 12, ../sass/_footer.scss */
+#footer ul li {
+  width: 135px;
+  height: 166px;
+  float: left;
+  margin-right: 15px;
+}
+/* line 17, ../sass/_footer.scss */
+#footer ul li dd {
+  height: 25px;
+}
+/* line 20, ../sass/_footer.scss */
+#footer ul li a {
+  color: #b2b2b2;
+  font-size: 12px;
+  line-height: 25px;
+}
+/* line 26, ../sass/_footer.scss */
+#footer ul li:last-child {
+  margin-right: 0;
+}
+
+/* line 31, ../sass/_footer.scss */
+#hehe {
+  width: 150px;
+  height: 35px;
+  line-height: 35px;
+  margin: auto;
+  color: #525252;
+}
+
+/* line 38, ../sass/_footer.scss */
+.footer_xia {
+  width: 1200px;
+  height: 50px;
+  margin-top: 46px;
+}
+/* line 42, ../sass/_footer.scss */
+.footer_xia img {
+  width: 120px;
+  height: 40px;
+  display: block;
+  margin-left: 21px;
 }

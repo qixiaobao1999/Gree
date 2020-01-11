@@ -48,11 +48,4 @@ body {
 
 @import "bigmap"; //尾部大头图
 
-//尾部结构
-#footer {
-  @extend %divv;
-  height: 378.6px;
-  margin-bottom: $margins;
-  border-top: 1px solid #ccc;
-  background-color:pink;
-}
+@import "footer"; //尾部结构

@@ -1,0 +1,48 @@
+#footer {
+  @extend %divv;
+  height: 378.6px;
+  margin-bottom: $margins;
+  border-top: 1px solid #ccc;
+  background-color: white;
+  ul {
+    width: 960px;
+    height: 226.6px;
+    margin: 0 auto;
+    padding: 37px 90px 0px 150px;
+    li {
+      width: 135px;
+      height: 166px;
+      float: left;
+      margin-right: 15px;
+      dd{
+          height: 25px;
+      }
+      a{
+        color: #b2b2b2;
+        font-size: 12px;
+        line-height: 25px;
+      }
+    }
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+}
+ #hehe {
+  width: 150px;
+  height: 35px;
+  line-height: 35px;
+  margin: auto;
+  color: #525252;
+}
+.footer_xia{
+    width: $div_width;
+    height: 50px;
+    margin-top: 46px;
+    img{
+        width: 120px;
+        height: 40px;
+        display: block;
+        margin-left: 21px;
+    }
+}
