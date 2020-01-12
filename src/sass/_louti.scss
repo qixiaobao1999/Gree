@@ -4,6 +4,7 @@
   top: 199px;
   right: 15px;
   z-index: 999;
+  display: none;
   ul {
     width: 60px;
     background-color: white;
@@ -22,8 +23,8 @@
       color: white;
     }
   }
-  span{
-    font-size: 16px;
+  p{
+    font-size: 14px;
     color: #cc0000;
   }
 }

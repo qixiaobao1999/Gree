@@ -21,6 +21,9 @@
         color: #b2b2b2;
         font-size: 12px;
         line-height: 25px;
+        &:hover{
+          cursor: move;
+        }
       }
     }
     li:last-child {

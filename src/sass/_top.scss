@@ -26,7 +26,7 @@ li a {
   cursor: move;
 }
 li span {
-  margin-left: 10px;
+  margin-left: 8px;
   margin-right: 8px;
   font-size: 12px;
   color: #ccc;
@@ -35,15 +35,25 @@ li span {
   position: absolute;
   left: 0;
   top: 35px;
-  z-index: 999;
   display: none;
+  opacity: 0;
 }
 #xz1 {
   position: absolute;
   left: 0;
   top: 35px;
-  z-index: 999;
   display: none;
+  opacity: 0;
+}
+li:hover #xz{
+  display: block;
+  opacity: 1;
+  z-index: 999;
+}
+li:hover #xz1{
+  display: block;
+  opacity: 1;
+  z-index: 999;
 }
 //右边的结构样式
 #top {

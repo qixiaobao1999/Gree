@@ -5,8 +5,11 @@
   overflow: hidden;
   ul {
     width: 500%;
+    position: absolute;
+    left: 0;
+    top: 0;
     li {
-      width: 20%;
+      width: 1519px;
       float: left;
       height: 450px;
     }
