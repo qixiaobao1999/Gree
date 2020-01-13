@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="格力商城-格力电器唯一官方网上商城，即送即装，全场包邮至乡镇村!网购空调、冰箱、空气能热水器、生活电器的首选商城">
+    <meta name="Keywords" content="格力商城-格力电器唯一官方网上商城，即送即装，全场包邮至乡镇村!网购空调、冰箱、空气能热水器、生活电器的首选商城">
+    <title>格力商城-格力电器唯一官方网上商城，即送即装，全场包邮至乡镇村!网购空调、冰箱、空气能热水器、生活电器的首选商城</title>
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/details.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1606913_nowcqgon76.css">
+    <style>
+        fieldset {
+            width: 800px;
+            height: 350px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+        form{
+            margin-left: 80px;
+            margin-top: 20px;
+        }
+
+        legend {
+            font-size: 20px;
+            color: red;
+        }
+
+        input {
+            border: 1px solid #ccc;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        p a {
+            text-decoration: none;
+            color: red;
+        }
+
+        input::placeholder {
+            font-size: 12px;
+        }
+
+        #pp {
+            font-size: 12px;
+            margin-left: 130px;
+            margin-top: -20px;
+            color: #999;
+            display: none;
+        }
+
+        #pp span {
+            width: 60px;
+            height: 18px;
+            text-align: center;
+            background-color: #999;
+            color: white;
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+        #yzm {
+            width: 160px;
+        }
+
+        #inp {
+            margin: 25px 20%;
+            background-color: red;
+            font-size: 20px;
+            color: white;
+            width: 280px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        #inpu {
+            display: inline-block;
+        }
+
+        #sp {
+            width: 70px;
+            height: 30px;
+            margin-left: 10px;
+            color: red;
+        }
+
+        #sp1 {
+            font-size: 14px;
+            width: 70px;
+            height: 30px;
+        }
+
+        #sp2 {
+            cursor: pointer;
+            width: 70px;
+            height: 30px;
+            color: blue;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!---------------------------顶部------------------------------ -->
+    <div id="top">
+
+    </div>
+
+    <!-- ------------------------头部加搜索框----------------------- -->
+    <div id="header">
+
+    </div>
+
+    <!-- -------------------------------中间内容--------------------------------- -->
+    <!-- 注册页面 -->
+
+    <fieldset>
+        <legend>注册页面</legend>
+        <form action="">
+            <p><label for="">&emsp;&emsp;&emsp;<a href="javascript:;">*</a>邮箱：</label><input type="text"
+                    placeholder="请输入邮箱"><span id="inpu"></span></p>
+            <p><label for="">&emsp;<a href="javascript:;">*</a>设置密码：</label><input type="password"
+                    placeholder="6-16位大小写英文字母，数组或者符号的组合">
+                <span id="inpu"></span>
+                <p id="pp">安全程度：<span>低</span><span>中</span><span>强</span></p>
+            </p>
+            <p><label for="">&emsp;<a href="javascript:;">*</a>确认密码：</label><input type="password"
+                    placeholder="请再次输入密码">
+                <span id="inpu"></span>
+            </p>
+            <p><label for="">&emsp;<a href="javascript:;">*</a>手机号码：</label><input type="text"
+                    placeholder="请输入手机号码"><span id="inpu"></span>
+            </p>
+            <p><label for=""><a href="javascript:;">*</a>图形验证码：</label><input type="text" placeholder="输入验证码"
+                    id="yzm"><span id="sp">W6MJT</span><span id="sp1">&emsp;&emsp;看不清？</span><span
+                    id="sp2">换一张</span><span id="inpu"></span></p>
+            <p><input type="submit" value="同意协议并注册" id="inp"></p>
+        </form>
+    </fieldset>
+
+    <!-- -----------------------------------尾部结构------------------------------- -->
+    <div id="footer">
+
+    </div>
+    <!-- 引入的公共结构 -->
+    <script>
+        !function ($) {
+            $("#top").load("top.html");//顶部相同的结构
+            $("#header").load("header.html");//头部相同的结构
+            $("#footer").load("footer.html");//尾部相同的结构
+        }(jQuery);
+    </script>
+</body>
+
+</html>

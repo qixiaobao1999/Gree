@@ -23,104 +23,100 @@
                 _this.num = $(this).index();//存一下索引
                 _this.anniu();
             })
-            //移入停止自动播放移出又运行
+            this.timer = setInterval(() => {
+                this.num++;
+                this.anniu();
+            }, 3000)
+            // 移入停止自动播放移出又运行
             this.wrap.hover(() => {
                 clearInterval(this.timer);
             }, () => {
-                this.autorun();
-            });
+                this.timer = setInterval(() => {
+                    this.num++;
+                    this.anniu();
+                }, 3000)
+            })
             //自动轮播
-            this.autorun();
+
         }
         //点击按钮事件
         anniu() {
-            let _this = this;
-            this.btns.eq(this.num).addClass("active").siblings().removeClass("active");
-            this.btns.css("opacity", 0.8);
-            _this.picul.stop(true, true).animate({
-                left: -_this.liwidth * (_this.num)
-            }, 600, function () {
-                if (parseInt(_this.picul.css("left")) == -_this.liwidth * (_this.btns.length + 1)) {
-                    _this.picul.css("left", -_this.liwidth + 'px');
-                    _this.num = 0;
+            console.log(this.num)
+            if (this.num == 5) {
+                console.log(1)
+                this.btns.removeClass('active');
+                this.btns.first().addClass("active");
+            } else {
+                this.btns.removeClass('active');
+                this.btns.eq(this.num).addClass("active");
+            }
+            this.picul.stop().animate({
+                left: -this.liwidth * this.num
+            }, () => {
+                if (this.num >= this.btns.length) {
+                    this.num = 0;
+                    this.picul.css({
+                        left: 0
+                    })
                 }
-                if (parseInt(_this.picul.css("left")) == 0) {
-                    _this.picul.css("left", -this.left * _this.btns.length + 'px');
-                    _this.num = _this.btns.length - 1;
-                }
-            });
-        }
-        //自动播放
-        autorun() {
-            let _this = this;
-            _this.timer = setInterval(function () {
-                _this.num++;
-                if (_this.num == _this.btns.length) {
-                    _this.btns.eq(0).addClass("active").siblings().removeClass("active");
-                }
-                _this.anniu();
-            }, 4000);
+            })
         }
     }
     new Lbt().init();
-
-
 }(jQuery);
 
 //楼梯，楼层
+;
 !function ($) {
-   //1.显示隐藏
-            //获取滚轮top值
-            let $scrollTop = $(window).scrollTop();
-            //判断滚出top值大于等于600时出现楼梯
-            if ($scrollTop >= 1100) {
-                $("#louti").show();
-            } else {
-                $("#louti").hide();
-            };
+    //1.显示隐藏
+    //获取滚轮top值
+    let $scrollTop = $(window).scrollTop();
+    //判断滚出top值大于等于600时出现楼梯
+    if ($scrollTop >= 1000) {
+        $("#louti").show();
+    } else {
+        $("#louti").hide();
+    };
 
-    //给每一个楼梯添加点击事件加样式,除了最后一个
+    //1.给每个楼梯添加点击事件除了最后一个
     $("#louti li").not(".last").on("click", function () {
+        $(window).off("scroll", $scroll);
+        //给当前点击得楼梯添加背景样式，其它的清除样式
         $(this).addClass("yanse").siblings("li").removeClass("yanse");
-        //点击楼梯获取楼层对应的高度赋给滚动条
+        //点击当前楼梯获取对应的楼层top值,利用索引实现
         let $loucengtop = $(".louceng").eq($(this).index()).offset().top;
         $("html").animate({
-            scrollTop: $loucengtop
+            scrollTop: $loucengtop //移动的是滚动条带动楼层的位置
         });
     });
-    //点击回到顶部
+    //2.点击回到顶部，也是滚动条的top值实现的
     $(".last").on("click", function () {
         $("html").animate({
             scrollTop: 0
         });
     });
-    //滚动楼层时对应得楼梯要加上背景样式
-    let $scroll = function(){
-        //1.显示隐藏
-            //获取滚轮top值
-            let $scrollTop = $(window).scrollTop();
-            //判断滚出top值大于等于600时出现楼梯
-            if ($scrollTop >= 1100) {
-                $("#louti").show();
-            } else {
-                $("#louti").hide();
-            };
+
+    //4.滚动鼠标获取楼层对应的楼梯,给对应的楼梯添加背景样式
+    let $scroll = function () {
+        // 4.1滚动的时候楼梯显示隐藏
+        let $scrollTop = $(window).scrollTop();
+        if ($scrollTop >= 1000) {
+            $("#louti").show();
+        } else {
+            $("#louti").hide();
+        };
         //获取每一个楼层的top值==当前楼层的top值加上自身高度的top值-遍历
-        $(".louceng").each(function(index,element){
-            let $loucengtop = $(".louceng").eq(index).offset().top + 
-            $(".louceng").eq(index).height();
-
-        //判断，如果楼层得高度+自身得高度大于滚动条得高度，给当前符合添加得楼梯添加样式
-            if($loucengtop >= $scrolltop){
-                //先去除所有楼梯得样式
-                $("#louti li").not(".last").removeClass("yanse");
-                $("#louti li").not(".last").eq(index).addClass("yanse");
-
-                //去除默认行为
-                return false;
-    }
-    });
-}
+        $(".louceng").each(function (index, element) {
+            let $loucengtop = $(".louceng").eq(index).offset().top + $(".louceng").eq(index).height();
+            //判断当前楼层的top值大不大于滚动条的top值
+            if ($loucengtop >= $scrollTop) {
+                //满足条件就跟当前楼层对应的楼梯添加背景样式，不过先得清除所有楼梯的样式
+                $("#louti li").not(".last").removeClass("yanse");//清除样式
+                $("#louti li").not(".last").eq(index).addClass("yanse");//当前楼层对应的楼梯，利用索引给对应的楼梯添加样式
+                return false //然后终止循环
+            }
+        });
+    };
     $(window).on("scroll", $scroll);
     $scroll();
 }(jQuery);

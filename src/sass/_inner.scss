@@ -1,0 +1,252 @@
+#inner {
+  position: relative;
+  margin: auto;
+  background: #fff;
+  box-shadow: none;
+  border: 1px solid #e8e8e8;
+  width: 1198px;
+  height: 660px;
+  margin-bottom: 30px;
+  .mic {
+    width: 1180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    margin: 30px 10px 10px 10px;
+    span {
+      font-size: 16px;
+      margin-left: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: #747474;
+      font-size: 12px;
+    }
+  }
+}
+//左边
+#inner .pic_left {
+  width: 398px;
+  height: 526.2px;
+  margin-left: 25px;
+  margin-top: 15px;
+  position: relative;
+  border: 1px solid black;
+  .xt {
+    width: 398px;
+    height: 400px;
+    float: left;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  .sf {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    opacity: 0.15;
+    background-color: seagreen;
+  }
+}
+//下面得一连串图片
+.pic_left .smalling {
+  width: 398px;
+  height: 94px;
+  position: absolute;
+  left: 0px;
+  top: 420px;
+  .zjt {
+    width: 15px;
+    height: 20px;
+    font-size: 26px;
+    color: #747474;
+    z-index: 999;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  .yjt {
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    font-size: 26px;
+    z-index: 999;
+    color: #747474;
+    cursor: pointer;
+  }
+  .imageMenu {
+    width: 360px;
+    height: 82px;
+    overflow: hidden;
+    position: absolute;
+    left: 18px;
+    top: 15px;
+    li {
+      width: 88px;
+      height: 82px;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.pic_left li img {
+  display: inline-block;
+  width: 78px;
+  height: 78px;
+  cursor: pointer;
+}
+//大放和大图
+#inner .df {
+  width: 480px;
+  height: 422px;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 432px;
+  top: 85px;
+  overflow: hidden;
+  display: none;
+  img {
+    display: inline-block;
+    width: 800px;
+    height: 800px;
+  }
+}
+//右边
+.pic_ringht {
+  width: 700px;
+  height: 528px;
+  position: absolute;
+  left: 450px;
+  top: 85px;
+  overflow: hidden;
+  h3 {
+    width: 450px;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 50px;
+    font-family: arial, "microsoft yahei";
+    color: #cc0000;
+  }
+  .title {
+    width: 450px;
+    height: 50px;
+    margin-top: 50px;
+    h4 {
+      font-size: 18px;
+      width: 450px;
+      margin-left: 30px;
+      line-height: 1.5em;
+    }
+  }
+}
+.pic_ringht .jiage {
+  width: 450px;
+  height: 35px;
+  margin-top: 50px;
+  margin-left: 30px;
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #747474;
+    line-height: 35px;
+  }
+  span {
+    color: #cc0000;
+    font-size: 18px;
+    line-height: 35px;
+    margin-left: 10px;
+  }
+}
+.pic_ringht .sl {
+  width: 236px;
+  height: 34px;
+  margin-top: 50px;
+  margin-left: 30px;
+  a {
+    width: 58px;
+    height: 26px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #747474;
+    float: left;
+  }
+  .wrap-input {
+    width: 140px;
+    height: 34px;
+    float: left;
+    #ipta {
+      width: 22px;
+      height: 22px;
+      background: #f7f7f7;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid #e8e8e8;
+      margin-top: 5px;
+      text-align: center;
+      line-height: 22px;
+    }
+    #input {
+      width: 28px;
+      float: left;
+      text-align: center;
+      height: 22px;
+      background: #fff;
+      line-height: 18px;
+      overflow: hidden;
+      border: none;
+      margin-top: 5px;
+    }
+    span{
+        width: 32px;
+        font-size: 15px;
+        line-height: 34px;
+        color: rgb(84, 84, 84);
+        float: left;
+        margin-left: 15px;
+    }
+  }
+}
+//加入购物车
+.pic_ringht .join{
+    width: 302px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 30px;
+    .left{
+        width: 138px;
+        height: 50px;
+        float: left;
+        background-color: #cc0000;
+        a{
+            text-decoration: none;
+            margin-left: 28px;
+            padding-top: 15px;
+            color: white;
+            float: left;
+        }
+    }
+}
+.pic_ringht .join{
+    .ringht{
+        width: 138px;
+        height: 48px;
+        margin-left: 10px;
+        float: left;
+        background-color: pink;
+        border: 1px solid #cc0000;
+        a{
+            text-decoration: none;
+            line-height: 48px;
+            margin-left: 32px;
+            color: #cc0000;
+        }
+    }
+}

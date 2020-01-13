@@ -459,31 +459,32 @@ li:hover #xz1 {
 
 /* line 2, ../sass/_navigation.scss */
 #navigation {
-  width: 100%;
+  width: 1200px;
   height: 36px;
+  margin: 0 auto;
   background-color: #f5f5f5;
 }
-/* line 6, ../sass/_navigation.scss */
+/* line 7, ../sass/_navigation.scss */
 #navigation .category {
   width: 1200px;
   height: 36px;
   margin: auto;
   display: flex;
 }
-/* line 11, ../sass/_navigation.scss */
+/* line 12, ../sass/_navigation.scss */
 #navigation .category .cleft {
   height: 36px;
   display: flex;
   position: relative;
 }
-/* line 17, ../sass/_navigation.scss */
+/* line 18, ../sass/_navigation.scss */
 #navigation .category .cringht {
   height: 36px;
   display: flex;
   margin-left: 25px;
 }
 
-/* line 24, ../sass/_navigation.scss */
+/* line 25, ../sass/_navigation.scss */
 .cleft .cleft_lt {
   width: 174px;
   display: flex;
@@ -491,20 +492,20 @@ li:hover #xz1 {
   align-items: center;
   background-color: #cc0000;
 }
-/* line 30, ../sass/_navigation.scss */
+/* line 31, ../sass/_navigation.scss */
 .cleft .cleft_lt .icon-list2 {
   font-size: 20px;
   color: white;
   margin-left: 5px;
 }
-/* line 35, ../sass/_navigation.scss */
+/* line 36, ../sass/_navigation.scss */
 .cleft .cleft_lt p {
   margin-left: 12px;
   font-size: 12px;
   color: white;
 }
 
-/* line 41, ../sass/_navigation.scss */
+/* line 42, ../sass/_navigation.scss */
 .classify {
   width: 174px;
   height: 450px;
@@ -514,46 +515,46 @@ li:hover #xz1 {
   top: 36px;
   z-index: 999;
 }
-/* line 50, ../sass/_navigation.scss */
+/* line 51, ../sass/_navigation.scss */
 .classify li {
   height: 40px;
   display: flex;
 }
-/* line 53, ../sass/_navigation.scss */
+/* line 54, ../sass/_navigation.scss */
 .classify li p {
   width: 150px;
   height: 40px;
 }
-/* line 57, ../sass/_navigation.scss */
+/* line 58, ../sass/_navigation.scss */
 .classify li .iconfont {
   color: white;
   font-size: 16px;
   line-height: 40px;
 }
-/* line 62, ../sass/_navigation.scss */
+/* line 63, ../sass/_navigation.scss */
 .classify li a {
   font-size: 12px;
   color: white;
   line-height: 38px;
 }
-/* line 67, ../sass/_navigation.scss */
+/* line 68, ../sass/_navigation.scss */
 .classify li .icon-youjiantou {
   font-size: 10px;
 }
-/* line 71, ../sass/_navigation.scss */
+/* line 72, ../sass/_navigation.scss */
 .classify li:hover {
   background-color: white;
 }
-/* line 74, ../sass/_navigation.scss */
+/* line 75, ../sass/_navigation.scss */
 .classify li:hover a {
   color: #cc0000;
 }
-/* line 77, ../sass/_navigation.scss */
+/* line 78, ../sass/_navigation.scss */
 .classify li:hover .icon-youjiantou {
   color: #cc0000;
 }
 
-/* line 82, ../sass/_navigation.scss */
+/* line 83, ../sass/_navigation.scss */
 .classify .listdiv {
   width: 990px;
   height: 450px;
@@ -565,28 +566,28 @@ li:hover #xz1 {
   background-color: white;
   border: 1px solid #ccc;
 }
-/* line 92, ../sass/_navigation.scss */
+/* line 93, ../sass/_navigation.scss */
 .classify .listdiv .dl {
   width: 660px;
   height: 50px;
   margin: 20px 40px 20px 30px;
   display: flex;
 }
-/* line 97, ../sass/_navigation.scss */
+/* line 98, ../sass/_navigation.scss */
 .classify .listdiv .dl .dd {
   width: 125px;
   line-height: 50px;
 }
-/* line 100, ../sass/_navigation.scss */
+/* line 101, ../sass/_navigation.scss */
 .classify .listdiv .dl .dd span {
   font-size: 16px;
   color: #747474;
 }
-/* line 104, ../sass/_navigation.scss */
+/* line 105, ../sass/_navigation.scss */
 .classify .listdiv .dl .dd span:hover {
   color: #cc0000;
 }
-/* line 108, ../sass/_navigation.scss */
+/* line 109, ../sass/_navigation.scss */
 .classify .listdiv .dl .dt {
   width: 438px;
   line-height: 50px;
@@ -594,17 +595,17 @@ li:hover #xz1 {
   color: #747474;
   border-bottom: 1px solid #ccc;
 }
-/* line 115, ../sass/_navigation.scss */
+/* line 116, ../sass/_navigation.scss */
 .classify .listdiv .dl .dt:hover {
   color: #cc0000;
 }
 
-/* line 120, ../sass/_navigation.scss */
+/* line 121, ../sass/_navigation.scss */
 .classify li:hover .listdiv {
   display: block;
 }
 
-/* line 123, ../sass/_navigation.scss */
+/* line 124, ../sass/_navigation.scss */
 .listdiv .listringht {
   width: 300px;
   height: 450px;
@@ -613,20 +614,20 @@ li:hover #xz1 {
   left: 689px;
   top: 0;
 }
-/* line 130, ../sass/_navigation.scss */
+/* line 131, ../sass/_navigation.scss */
 .listdiv .listringht h1 {
   margin-left: 84px;
   font-size: 17px;
   color: #424242;
   margin-top: 20px;
 }
-/* line 136, ../sass/_navigation.scss */
+/* line 137, ../sass/_navigation.scss */
 .listdiv .listringht ul {
   width: 260px;
   height: 394px;
   margin: 10px 20px 10px 20px;
 }
-/* line 141, ../sass/_navigation.scss */
+/* line 142, ../sass/_navigation.scss */
 .listdiv .listringht ul li {
   width: 125px;
   height: 187px;
@@ -635,13 +636,13 @@ li:hover #xz1 {
   margin-top: 10px;
   background-color: white;
 }
-/* line 149, ../sass/_navigation.scss */
+/* line 150, ../sass/_navigation.scss */
 .listdiv .listringht ul #li2,
 .listdiv .listringht ul #li4 {
   margin-right: 0px;
 }
 
-/* line 156, ../sass/_navigation.scss */
+/* line 157, ../sass/_navigation.scss */
 #liimgs img {
   display: inline-block;
   width: 114px;
@@ -649,7 +650,7 @@ li:hover #xz1 {
   margin-top: 5px;
   margin-left: 5px;
 }
-/* line 163, ../sass/_navigation.scss */
+/* line 164, ../sass/_navigation.scss */
 #liimgs h3 {
   width: 114px;
   margin-top: 3px;
@@ -661,32 +662,32 @@ li:hover #xz1 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 174, ../sass/_navigation.scss */
+/* line 175, ../sass/_navigation.scss */
 #liimgs p {
   margin-left: 32px;
   margin-top: 12px;
 }
 
-/* line 179, ../sass/_navigation.scss */
+/* line 180, ../sass/_navigation.scss */
 #navigation .cringht {
   width: 990px;
 }
-/* line 182, ../sass/_navigation.scss */
+/* line 183, ../sass/_navigation.scss */
 #navigation .cringht ul {
   display: flex;
 }
-/* line 184, ../sass/_navigation.scss */
+/* line 185, ../sass/_navigation.scss */
 #navigation .cringht ul li {
   height: 36px;
   margin-right: 28px;
 }
-/* line 187, ../sass/_navigation.scss */
+/* line 188, ../sass/_navigation.scss */
 #navigation .cringht ul li a {
   color: #424242;
   line-height: 36px;
   font-size: 14px;
 }
-/* line 192, ../sass/_navigation.scss */
+/* line 193, ../sass/_navigation.scss */
 #navigation .cringht ul li a:hover {
   color: #707070;
 }
@@ -696,29 +697,30 @@ li:hover #xz1 {
   width: 100%;
   height: 450px;
   position: relative;
+  margin: 0 auto;
   overflow: hidden;
 }
-/* line 6, ../sass/_slideshow.scss */
+/* line 7, ../sass/_slideshow.scss */
 #slideshow ul {
-  width: 500%;
+  width: 600%;
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 11, ../sass/_slideshow.scss */
+/* line 12, ../sass/_slideshow.scss */
 #slideshow ul li {
   width: 1519px;
   float: left;
   height: 450px;
 }
 
-/* line 18, ../sass/_slideshow.scss */
+/* line 19, ../sass/_slideshow.scss */
 ol {
   position: absolute;
   left: 45%;
   bottom: 20px;
 }
-/* line 22, ../sass/_slideshow.scss */
+/* line 23, ../sass/_slideshow.scss */
 ol li {
   width: 10px;
   height: 10px;
@@ -730,7 +732,7 @@ ol li {
   opacity: 0.4;
   float: left;
 }
-/* line 33, ../sass/_slideshow.scss */
+/* line 34, ../sass/_slideshow.scss */
 ol .active {
   background-color: #fff;
   opacity: 1;
@@ -1842,7 +1844,7 @@ li:last-child {
 /* line 1, ../sass/_louti.scss */
 #louti {
   position: fixed;
-  left: 1444.2px;
+  left: 1400.2px;
   top: 199px;
   right: 15px;
   z-index: 999;
@@ -1877,7 +1879,7 @@ li:last-child {
 
 /* line 1, ../sass/_video.scss */
 #video {
-  height: 236.8px;
+  height: 380px;
   margin-bottom: 30px;
 }
 /* line 5, ../sass/_video.scss */
