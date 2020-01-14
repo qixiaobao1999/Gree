@@ -101,21 +101,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-left: 25px;
   margin-top: 15px;
   position: relative;
-  border: 1px solid black;
+  border: 1px solid #ccc;
+  border-bottom: none;
 }
-/* line 35, ../sass/_inner.scss */
+/* line 36, ../sass/_inner.scss */
 #inner .pic_left .xt {
   width: 398px;
-  height: 400px;
+  height: 399px;
   float: left;
+  border-bottom: 1px solid #ccc;
 }
-/* line 39, ../sass/_inner.scss */
+/* line 41, ../sass/_inner.scss */
 #inner .pic_left .xt img {
   width: 100%;
   height: 100%;
   display: block;
 }
-/* line 45, ../sass/_inner.scss */
+/* line 47, ../sass/_inner.scss */
 #inner .pic_left .sf {
   width: 60px;
   height: 60px;
@@ -125,9 +127,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: none;
   opacity: 0.15;
   background-color: seagreen;
+  cursor: move;
 }
 
-/* line 57, ../sass/_inner.scss */
+/* line 60, ../sass/_inner.scss */
 .pic_left .smalling {
   width: 398px;
   height: 94px;
@@ -135,17 +138,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 0px;
   top: 420px;
 }
-/* line 63, ../sass/_inner.scss */
+/* line 66, ../sass/_inner.scss */
 .pic_left .smalling .zjt {
   width: 15px;
   height: 20px;
   font-size: 26px;
-  color: #747474;
+  color: #fff;
   z-index: 999;
   margin-top: 40px;
   cursor: pointer;
 }
-/* line 72, ../sass/_inner.scss */
+/* line 75, ../sass/_inner.scss */
 .pic_left .smalling .yjt {
   width: 15px;
   height: 20px;
@@ -157,7 +160,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #747474;
   cursor: pointer;
 }
-/* line 83, ../sass/_inner.scss */
+/* line 86, ../sass/_inner.scss */
 .pic_left .smalling .imageMenu {
   width: 360px;
   height: 82px;
@@ -166,7 +169,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 18px;
   top: 15px;
 }
-/* line 90, ../sass/_inner.scss */
+/* line 93, ../sass/_inner.scss */
+.pic_left .smalling .imageMenu ul {
+  margin-left: -3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 99, ../sass/_inner.scss */
 .pic_left .smalling .imageMenu li {
   width: 88px;
   height: 82px;
@@ -176,7 +186,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   align-items: center;
 }
 
-/* line 100, ../sass/_inner.scss */
+/* line 109, ../sass/_inner.scss */
 .pic_left li img {
   display: inline-block;
   width: 78px;
@@ -184,25 +194,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   cursor: pointer;
 }
 
-/* line 107, ../sass/_inner.scss */
+/* line 116, ../sass/_inner.scss */
 #inner .df {
   width: 480px;
   height: 422px;
   border: 1px solid #ccc;
   position: absolute;
-  left: 432px;
-  top: 85px;
+  left: 0px;
+  top: 25px;
   overflow: hidden;
   display: none;
 }
-/* line 116, ../sass/_inner.scss */
+/* line 125, ../sass/_inner.scss */
 #inner .df img {
   display: inline-block;
+  position: absolute;
   width: 800px;
   height: 800px;
 }
 
-/* line 123, ../sass/_inner.scss */
+/* line 133, ../sass/_inner.scss */
 .pic_ringht {
   width: 700px;
   height: 528px;
@@ -211,7 +222,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 85px;
   overflow: hidden;
 }
-/* line 130, ../sass/_inner.scss */
+/* line 140, ../sass/_inner.scss */
 .pic_ringht h3 {
   width: 450px;
   font-size: 14px;
@@ -220,13 +231,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: arial, "microsoft yahei";
   color: #cc0000;
 }
-/* line 138, ../sass/_inner.scss */
+/* line 148, ../sass/_inner.scss */
 .pic_ringht .title {
   width: 450px;
   height: 50px;
   margin-top: 50px;
 }
-/* line 142, ../sass/_inner.scss */
+/* line 152, ../sass/_inner.scss */
 .pic_ringht .title h4 {
   font-size: 18px;
   width: 450px;
@@ -234,21 +245,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 1.5em;
 }
 
-/* line 150, ../sass/_inner.scss */
+/* line 160, ../sass/_inner.scss */
 .pic_ringht .jiage {
   width: 450px;
   height: 35px;
   margin-top: 50px;
   margin-left: 30px;
 }
-/* line 155, ../sass/_inner.scss */
+/* line 165, ../sass/_inner.scss */
 .pic_ringht .jiage a {
   text-decoration: none;
   font-size: 16px;
   color: #747474;
   line-height: 35px;
 }
-/* line 161, ../sass/_inner.scss */
+/* line 171, ../sass/_inner.scss */
 .pic_ringht .jiage span {
   color: #cc0000;
   font-size: 18px;
@@ -256,14 +267,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-left: 10px;
 }
 
-/* line 168, ../sass/_inner.scss */
+/* line 178, ../sass/_inner.scss */
 .pic_ringht .sl {
   width: 236px;
   height: 34px;
   margin-top: 50px;
   margin-left: 30px;
 }
-/* line 173, ../sass/_inner.scss */
+/* line 183, ../sass/_inner.scss */
 .pic_ringht .sl a {
   width: 58px;
   height: 26px;
@@ -272,13 +283,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #747474;
   float: left;
 }
-/* line 181, ../sass/_inner.scss */
+/* line 191, ../sass/_inner.scss */
 .pic_ringht .sl .wrap-input {
   width: 140px;
   height: 34px;
   float: left;
 }
-/* line 185, ../sass/_inner.scss */
+/* line 195, ../sass/_inner.scss */
 .pic_ringht .sl .wrap-input #ipta {
   width: 22px;
   height: 22px;
@@ -290,8 +301,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
   line-height: 22px;
 }
-/* line 196, ../sass/_inner.scss */
-.pic_ringht .sl .wrap-input #input {
+/* line 206, ../sass/_inner.scss */
+.pic_ringht .sl .wrap-input #count {
   width: 28px;
   float: left;
   text-align: center;
@@ -302,7 +313,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: none;
   margin-top: 5px;
 }
-/* line 207, ../sass/_inner.scss */
+/* line 217, ../sass/_inner.scss */
 .pic_ringht .sl .wrap-input span {
   width: 32px;
   font-size: 15px;
@@ -312,21 +323,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-left: 15px;
 }
 
-/* line 218, ../sass/_inner.scss */
+/* line 228, ../sass/_inner.scss */
 .pic_ringht .join {
   width: 302px;
   height: 50px;
   margin-top: 50px;
   margin-left: 30px;
 }
-/* line 223, ../sass/_inner.scss */
+/* line 233, ../sass/_inner.scss */
 .pic_ringht .join .left {
   width: 138px;
   height: 50px;
   float: left;
   background-color: #cc0000;
 }
-/* line 228, ../sass/_inner.scss */
+/* line 238, ../sass/_inner.scss */
 .pic_ringht .join .left a {
   text-decoration: none;
   margin-left: 28px;
@@ -335,7 +346,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
 }
 
-/* line 238, ../sass/_inner.scss */
+/* line 248, ../sass/_inner.scss */
 .pic_ringht .join .ringht {
   width: 138px;
   height: 48px;
@@ -344,7 +355,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: pink;
   border: 1px solid #cc0000;
 }
-/* line 245, ../sass/_inner.scss */
+/* line 255, ../sass/_inner.scss */
 .pic_ringht .join .ringht a {
   text-decoration: none;
   line-height: 48px;
