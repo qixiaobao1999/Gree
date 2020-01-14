@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/qixiaobao1999/Gree#readme",
   "dependencies": {
-    "jquery": "^1.12.4"
+    "jquery": "^3.4.0"
   },
   "devDependencies": {
     "expose-loader": "^0.7.5",
