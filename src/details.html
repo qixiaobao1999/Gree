@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="stylesheets/index.css">
     <link rel="stylesheet" href="stylesheets/details.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1606913_nowcqgon76.css">
+    <script src="../dist/bundle.js" defer async="true"></script>
 </head>
 
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!---------------------------顶部------------------------------ -->
     <div id="top">
 
@@ -37,14 +37,16 @@
         <!-- 左边 -->
         <div class="pic_left">
             <div class="xt">
-                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/12/26/c764de58-c5b1-4a05-b66f-600b88815069.jpg"
-                    alt="">
+                <img src="" alt="">
             </div>
             <div class="sf">小放</div>
             <!-- 下面得一连串图片 -->
             <div class="smalling">
                 <div class="zjt">
-                    < </div> <div class="yjt"> >
+                         < 
+                </div>
+                 <div class="yjt">
+                         >
                 </div>
                 <div class="imageMenu">
                     <ul style="margin-left: -84px;">
@@ -87,43 +89,35 @@
                     <a href="javascript:;" id="ipta">-</a>
                     <input type="text" value="1" id="input">
                     <a href="javascript:;" id="ipta">+</a>
-                <span>有货</span>
+                    <span>有货</span>
+                </div>
             </div>
-        </div>
-        <!-- 加入购物车 -->
-        <div class="join">
-            <div class="left">
-                <a href="javascript:;">加入购物车</a>
+            <!-- 加入购物车 -->
+            <div class="join">
+                <div class="left">
+                    <a href="javascript:;">加入购物车</a>
+                </div>
+                <div class="ringht">
+                    <a href="javascript:;">立即购买</a>
+                </div>
             </div>
-            <div class="ringht">
-                <a href="javascript:;">立即购买</a>
+
+            <!-- 大放和大图 -->
+            <div class="df">
+                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/24/be4b80c2-9457-42e3-b0f4-aae5d05baae3.jpg"
+                    alt="" class="dt">
             </div>
-        </div>
 
-        <!-- 大放和大图 -->
-        <div class="df">
-            <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/24/be4b80c2-9457-42e3-b0f4-aae5d05baae3.jpg"
-                alt="">
+
         </div>
 
 
-    </div>
 
 
+        <!-- -----------------------------------尾部结构------------------------------- -->
+        <div id="footer">
 
-
-    <!-- -----------------------------------尾部结构------------------------------- -->
-    <div id="footer">
-
-    </div>
-    <!-- 引入的公共结构 -->
-    <script>
-        !function ($) {
-            $("#top").load("top.html");//顶部相同的结构
-            $("#header").load("header.html");//头部相同的结构
-            $("#footer").load("footer.html");//尾部相同的结构
-        }(jQuery);
-    </script>
+        </div>
 </body>
 
 </html>

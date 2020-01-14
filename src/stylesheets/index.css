@@ -104,7 +104,7 @@ li a {
   color: #cc0000;
   text-decoration: none;
   font-size: 12px;
-  cursor: move;
+  cursor: pointer;
 }
 
 /* line 28, ../sass/_top.scss */
@@ -267,7 +267,7 @@ li:hover #xz1 {
   width: 100%;
   height: 80px;
   display: block;
-  cursor: move;
+  cursor: pointer;
 }
 
 /* line 23, ../sass/_header.scss */
@@ -344,7 +344,7 @@ li:hover #xz1 {
 .sosuo .bt {
   position: relative;
   float: left;
-  cursor: move;
+  cursor: pointer;
 }
 /* line 87, ../sass/_header.scss */
 .sosuo .bt .bt_fdj {
@@ -1004,7 +1004,7 @@ li:last-child {
   margin-bottom: 10px;
 }
 /* line 90, ../sass/_refrigerator.scss */
-.bx_ringht .ringht ul #li3 {
+.bx_ringht .ringht ul .li3 {
   margin-right: 0;
 }
 
@@ -1161,7 +1161,7 @@ li:last-child {
   margin-bottom: 10px;
 }
 /* line 90, ../sass/_calorifier.scss */
-.bx_ringht .ringht ul #li3 {
+.bx_ringht .ringht ul .li3 {
   margin-right: 0;
 }
 
@@ -1318,7 +1318,7 @@ li:last-child {
   margin-bottom: 10px;
 }
 /* line 90, ../sass/_electric.scss */
-.bx_ringht .ringht ul #li3 {
+.bx_ringht .ringht ul .li3 {
   margin-right: 0;
 }
 
@@ -1475,7 +1475,7 @@ li:last-child {
   margin-bottom: 10px;
 }
 /* line 90, ../sass/_live.scss */
-.bx_ringht .ringht ul #li3 {
+.bx_ringht .ringht ul .li3 {
   margin-right: 0;
 }
 
@@ -1632,24 +1632,28 @@ li:last-child {
   margin-bottom: 10px;
 }
 /* line 90, ../sass/_phone.scss */
-.bx_ringht .ringht ul #li3 {
-  margin-right: 0;
+.bx_ringht .ringht ul .lis {
+  margin-right: 10px;
+}
+/* line 93, ../sass/_phone.scss */
+.bx_ringht .ringht ul .lis:nth-child(3n) {
+  margin: 0;
 }
 
-/* line 97, ../sass/_phone.scss */
+/* line 100, ../sass/_phone.scss */
 .bx_ringht li a {
   display: inline-block;
   width: 170px;
   height: 170px;
   padding: 15px;
 }
-/* line 102, ../sass/_phone.scss */
+/* line 105, ../sass/_phone.scss */
 .bx_ringht li a img {
   width: 100%;
   height: 100%;
   display: block;
 }
-/* line 107, ../sass/_phone.scss */
+/* line 110, ../sass/_phone.scss */
 .bx_ringht li a h4 {
   width: 100%;
   padding-right: 25px;
@@ -1663,7 +1667,7 @@ li:last-child {
   color: #3e3a39;
 }
 
-/* line 122, ../sass/_phone.scss */
+/* line 125, ../sass/_phone.scss */
 .bx_ringht li a p {
   color: #979797;
   font-size: 12px;
@@ -1673,7 +1677,7 @@ li:last-child {
   margin-top: 5px;
   padding: 0 20px 0 4px;
 }
-/* line 131, ../sass/_phone.scss */
+/* line 134, ../sass/_phone.scss */
 .bx_ringht li a span {
   display: inline-block;
   width: 100%;
@@ -1789,7 +1793,7 @@ li:last-child {
   margin-bottom: 10px;
 }
 /* line 90, ../sass/_conditioner.scss */
-.bx_ringht .ringht ul #li3 {
+.bx_ringht .ringht ul .li3 {
   margin-right: 0;
 }
 

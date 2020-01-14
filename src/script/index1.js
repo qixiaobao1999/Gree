@@ -1,75 +1,69 @@
-!function ($) {
-    //轮播图
-    class Lbt {
-        constructor() {
-            this.wrap = $("#slideshow");
-            this.picul = $("#slideshow ul");//ul
-            this.piclist = $("#slideshow ul li");//li
-            this.btns = $("#slideshow ol li");//按钮
-            this.liwidth = this.piclist.eq(0).width();//一个li的宽度
-            this.num = 0;
-            this.timer = null;
-        }
-        init() {
-            let _this = this;
-            let $fistpic = this.piclist.first().clone()//克隆第一张图片放到最后面
-            this.picul.append($fistpic);
-            //重新获取li的长度
-            this.piclist = $("#slideshow ul li");
-            //重新获取ul的宽度
-            this.picul.css('width', this.liwidth * this.piclist.length);
-            // //给按钮添加点击事件
-            this.btns.on("click", function () {
-                _this.num = $(this).index();//存一下索引
-                _this.anniu();
-            })
+// //轮播图
+class Lbt {
+    constructor() {
+        this.wrap = $("#slideshow");
+        this.picul = $("#slideshow ul");//ul
+        this.piclist = $("#slideshow ul li");//li
+        this.btns = $("#slideshow ol li");//按钮
+        this.liwidth = this.piclist.eq(0).width();//一个li的宽度
+        this.num = 0;
+        this.timer = null;
+    }
+    init() {
+        let _this = this;
+        let $fistpic = this.piclist.first().clone()//克隆第一张图片放到最后面
+        this.picul.append($fistpic);
+        //重新获取li的长度
+        this.piclist = $("#slideshow ul li");
+        //重新获取ul的宽度
+        this.picul.css('width', this.liwidth * this.piclist.length);
+        // //给按钮添加点击事件
+        this.btns.on("click", function () {
+            _this.num = $(this).index();//存一下索引
+            _this.anniu();
+        })
+        this.timer = setInterval(() => {
+            this.num++;
+            this.anniu();
+        }, 3000)
+        // 移入停止自动播放移出又运行
+        this.wrap.hover(() => {
+            clearInterval(this.timer);
+        }, () => {
             this.timer = setInterval(() => {
                 this.num++;
                 this.anniu();
             }, 3000)
-            // 移入停止自动播放移出又运行
-            this.wrap.hover(() => {
-                clearInterval(this.timer);
-            }, () => {
-                this.timer = setInterval(() => {
-                    this.num++;
-                    this.anniu();
-                }, 3000)
-            })
-            //自动轮播
+        })
 
-        }
-        //点击按钮事件
-        anniu() {
-            console.log(this.num)
-            if (this.num == 5) {
-                console.log(1)
-                this.btns.removeClass('active');
-                this.btns.first().addClass("active");
-            } else {
-                this.btns.removeClass('active');
-                this.btns.eq(this.num).addClass("active");
-            }
-            this.picul.stop().animate({
-                left: -this.liwidth * this.num
-            }, () => {
-                if (this.num >= this.btns.length) {
-                    this.num = 0;
-                    this.picul.css({
-                        left: 0
-                    })
-                }
-            })
-        }
     }
-    new Lbt().init();
-}(jQuery);
+    //点击按钮事件
+    anniu() {
+        if (this.num == 5) {
+            this.btns.removeClass('active');
+            this.btns.first().addClass("active");
+        } else {
+            this.btns.removeClass('active');
+            this.btns.eq(this.num).addClass("active");
+        }
+        this.picul.stop().animate({
+            left: -this.liwidth * this.num
+        }, () => {
+            if (this.num >= this.btns.length) {
+                this.num = 0;
+                this.picul.css({
+                    left: 0
+                })
+            }
+        })
+    }
+}
+
 
 //楼梯，楼层
-;
-!function ($) {
-    //1.显示隐藏
-    //获取滚轮top值
+//1.显示隐藏
+//获取滚轮top值
+function louti() {
     let $scrollTop = $(window).scrollTop();
     //判断滚出top值大于等于600时出现楼梯
     if ($scrollTop >= 1000) {
@@ -119,4 +113,56 @@
     };
     $(window).on("scroll", $scroll);
     $scroll();
-}(jQuery);
+}
+
+
+//数据渲染
+class render {
+    constructor() {
+        this.ul = $(".ul1");
+    }
+    init() {
+        // http://10.31.152.37/Gree/php/index1.php --接口
+        $.ajax({
+            url:"http://10.31.152.37/Gree/php/index1.php",
+            dataType:"json"
+        }).done((data)=>{
+            let strHTML = "";
+        $.each(data,function(index,value){
+            strHTML += `
+                <li class="lis">
+                <a href='details.html?sid=${value.sid}' target="_blank">
+                    <img src='${value.url}'>
+                    <h4>${value.title}</h4>
+                    <p>${value.title1}</p>
+                    <span>${value.pice}</span>
+                </a>
+                </li>
+            `;
+        });
+            this.ul.html(strHTML);
+        });
+    }
+}
+
+
+
+//引入得公共结构
+function introduce() {
+    $("#top").load("top.html");//顶部相同的结构
+    $("#header").load("header.html");//头部相同的结构
+    $("#footer").load("footer.html");//尾部相同的结构
+}
+
+
+
+function Page() {
+    new Lbt().init();
+    louti();
+    new render().init();
+    introduce();
+}
+
+export {
+    Page
+}

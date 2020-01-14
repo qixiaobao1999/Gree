@@ -14,7 +14,7 @@
           width: 100%;
           height: 80px;
           display: block;
-          cursor: move;
+          cursor: pointer;
         }
       }
     }
@@ -83,7 +83,7 @@
     .bt {
       position: relative;
       float: left;
-      cursor: move;
+      cursor: pointer;
       .bt_fdj {
         width: 70px;
         height: 38px;

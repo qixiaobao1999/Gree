@@ -87,8 +87,11 @@
       .lis {
         margin-bottom: 10px;
       }
-      #li3 {
-        margin-right: 0;
+      .lis {
+        margin-right: 10px;
+      }
+      .lis:nth-child(3n){
+        margin: 0;
       }
     }
   }

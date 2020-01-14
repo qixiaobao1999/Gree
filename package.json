@@ -1,0 +1,28 @@
+{
+  "name": "gree",
+  "version": "1.0.0",
+  "description": "这是一个格力商城的项目",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack --progress --display-modules --colors --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qixiaobao1999/Gree.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qixiaobao1999/Gree/issues"
+  },
+  "homepage": "https://github.com/qixiaobao1999/Gree#readme",
+  "dependencies": {
+    "jquery": "^1.12.4"
+  },
+  "devDependencies": {
+    "expose-loader": "^0.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
