@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="stylesheets/index.css">
     <link rel="stylesheet" href="stylesheets/details.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1606913_nowcqgon76.css">
+    <script src="../dist/bundle.js" defer async='true'></script>
     <style>
         .top {
             width: 1200px;
@@ -214,7 +215,6 @@
 </head>
 
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!---------------------------顶部------------------------------ -->
     <div id="top">
 
@@ -229,7 +229,7 @@
     <div class="top">
         <ul class="font_ff">
             <li class="shop_name">
-                <input type="checkbox" checked>全选 商品
+                <input type="checkbox" checked id="in1">全选 商品
             </li>
             <li>单价</li>
             <li>数量</li>
@@ -237,35 +237,36 @@
             <li>操作</li>
         </ul>
     </div>
-    <div class="zhong">
-        <h4>
-            <input type="checkbox">格力官方自营旗舰店
+    <div class="wrap_zhong">
+    <div class="zhong" style="display: none;">
+        <h4 style="margin-left: 20px;font-size: 15px;">
+            格力官方自营旗舰店
         </h4>
         <div class="zlist">
-            <input type="checkbox" class="pad_t20">
+            <input type="checkbox" checked class="pad_t20" id="in3">
             <ul class="listBox">
                 <li class="pad_img">
-                    <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/12/26/c764de58-c5b1-4a05-b66f-600b88815069.jpg"
+                    <img src=""
                         alt="">
                 </li>
                 <li class="pad_name">
                     <a href="javascript:;" style="
-                    color: #747474;">大松百香煲IH智能压力电饭煲 4L 软糯口感 本真味道 GDCF-4009C顶 黑+银色</a>
+                    color: #747474;"></a>
                 </li>
-                <li class="pan_pice">
-                    <a href="javascript:;" style="
-                    color: #747474;"> ¥2999.00
+                <li class="pan_pice" style="color: #cc0000;">
+                    ￥<a href="javascript:;" style="
+                    color: #cc0000; font-size: 14px;">
                     </a>
                 </li>
                 <li class="pan_m">
                     <div class="pan_div">
-                        <button class="btn">-</button>
+                        <button class="btn zuojia">-</button>
                         <input type="text" value="1" id="ipt6">
-                        <button class="btn">+</button>
+                        <button class="btn youjia">+</button>
                     </div>
                 </li>
-                <li class="pan_heji">
-                    <strong>￥2999.00</strong>
+                <li class="pan_heji" style="color: #cc0000;">
+                    ￥<strong style="color: #cc0000;"></strong>
                 </li>
                 <li class="pan_caozuo">
                     <a href="javascript:;" style="color: #747474; font-size: 16px;">[删除]</a>
@@ -273,16 +274,19 @@
             </ul>
         </div>
     </div>
+</div>
     <div class="xm">
         <div class="xmleft">
-            <input type="checkbox" checked><span>全选</span>
-            <span style="margin-left: 20px;">批量删除</span>
+            <a style="margin-left: 20px; cursor: pointer;font-size: 14px;">批量删除</a>
         </div>
         <div class="xmz">
             <p style="font-size: 15px; color: #747474;">“去结算”查看满减/折扣优惠</p>
         </div>
+        <div class="numsl" style="margin-top: 15px; font-size: 14px; color: #747474;float: left;margin-left: 10px;">
+            已选&emsp;<span id="spnum" style="color: #cc0000;">0</span>&emsp;商品
+        </div>
         <div class="xmringht">
-                <span id="zongji" style="color: #cc0000;">总计:￥2999.00</span>
+                <span id="zongji" style="color: #cc0000;">￥0.00</span>
                 <div class="jiesuan" style="color: #fff;font-size: 20px;">去结算</div>
         </div>
     </div>
@@ -291,14 +295,6 @@
     <div id="footer">
 
     </div>
-    <!-- 引入的公共结构 -->
-    <script>
-        !function ($) {
-            $("#top").load("top.html");//顶部相同的结构
-            $("#header").load("header.html");//头部相同的结构
-            $("#footer").load("footer.html");//尾部相同的结构
-        }(jQuery);
-    </script>
 </body>
 
 </html>

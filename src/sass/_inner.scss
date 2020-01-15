@@ -50,9 +50,9 @@
     position: absolute;
     left: 0;
     top: 0;
-    display: none;
+    visibility: hidden;
     opacity: 0.15;
-    background-color: seagreen;
+    background-color: red;
     cursor: move;
   }
 }
@@ -120,8 +120,7 @@
   position: absolute;
   left: 0px;
   top: 25px;
-  overflow: hidden;
-  display: none;
+  visibility: hidden;
   img {
     display: inline-block;
     position: absolute;

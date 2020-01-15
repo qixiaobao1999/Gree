@@ -16,6 +16,7 @@ class Details {
             dataType: "json"
         }).done((obj) => {
             $(".xt img").attr("src", obj.url);
+            $(".df img").attr("src",obj.url);
             $(".title h4").html(obj.title);
             $(".pic_ringht h3").html(obj.title1);
             $(".jiage span").html("￥" + obj.pice);
@@ -29,8 +30,31 @@ class Details {
             });
             this.list_ul.html(strHTML);
         });
+
+        //点击数量加加减减
+        this.click();
         //执行购物车方法
         this.addcart();
+    }
+    click(){
+        //右键点击
+        let $value = 1;
+        let $num = this.count.val();
+        $(".youa").on("click",()=>{
+            $value ++;
+                this.count.val($value);
+           
+        });
+
+        $(".zuoa").on("click",()=>{
+            if($value >= $num){
+                $value --;
+                this.count.val($value)
+            }
+            if(this.count.val() <= 1){
+                this.count.val(1);
+            }
+        })
     }
     //添加购物车操作
     addcart() {
@@ -80,8 +104,9 @@ class Fdj {
         let $this = this;
         //1.移入移出显示隐藏小放和大放
         this.xt.hover(() => {
-            this.sf.show();
-            this.df.show();
+            this.sf.css("visibility", "visible");
+            this.df.css("visibility", "visible");
+
 
             //2.获取小放得尺寸
             this.sf.css({
@@ -93,10 +118,10 @@ class Fdj {
             let $bili = this.dt.width() / this.xt.width();
 
             //3.鼠标移动小放跟随鼠标
-            this.xt.on("mousemove", () => {
+            this.xt.on("mousemove", (e) => {
                 //3.1固定在小图里不能移出去
-                let $L = event.pageX - (this.wrap.offset().left + this.sf.width() / 2);
-                let $T = event.pageY - (this.wrap.offset().top + this.sf.height() / 2);
+                let $L = e.pageX - (this.wrap.offset().left + this.sf.width() / 2);
+                let $T = e.pageY - (this.wrap.offset().top + this.sf.height() / 2);
 
                 if ($L < 0) {
                     $L = 0;
@@ -121,8 +146,8 @@ class Fdj {
 
             });
         }, () => {//鼠标移出
-            this.sf.hide();
-            this.df.hide();
+            this.sf.css("visibility", "hidden");
+            this.df.css("visibility", "hidden");
         });
 
         //4.点击li把图片地址赋给小图的src和大图的src,事件委托
@@ -138,17 +163,30 @@ class Fdj {
 
         //右键点击事件
         this.yjt.on("click", () => {
-            
+
             if ($(".imageMenu ul li").size() > $num) {
                 $num++;
                 this.zjt.css("color", "#747474");
                 if ($num === $(".imageMenu ul li").size()) {//判断如果$num的长度等于li的长度不能点击右键了
-                    this.yjt.css("color","#fff");
+                    this.yjt.css("color", "#fff");
                 }
                 //ul移动一个li的位置
                 this.ul.animate({
                     left: -($num - 4) * $(".imageMenu ul li").width()
                 })
+            }
+        });
+        //6.左键点击事件
+        this.zjt.on("click", () => {
+            if ($num > 4) {
+                $num--;
+                this.yjt.css("color", "#747474");
+                if ($num === 4) {
+                    this.zjt.css("color", "#fff");
+                }
+                this.ul.animate({
+                    left: -($num - 4) * $(".imageMenu ul li").width()
+                });
             }
         });
 
