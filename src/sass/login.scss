@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import "compass/reset"; //重置
+@import "compass/css3";
+
+$page_width: 100%;
+$div_width: 1200px;
+$div_height: 616px;
+$margins: 30px;
+$divmargin: 0 auto;
+$opacitys: 0.8;
+$hovercolor: #707070;
+
+
+@import "log";

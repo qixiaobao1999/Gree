@@ -1,0 +1,186 @@
+/* line 5, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_regist.scss */
+fieldset {
+  width: 800px;
+  height: 350px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: white;
+  position: relative;
+}
+
+/* line 10, ../sass/_regist.scss */
+form {
+  width: 700px;
+  margin-left: 300px;
+  margin-top: 40px;
+}
+
+/* line 16, ../sass/_regist.scss */
+legend {
+  font-size: 20px;
+  color: red;
+}
+
+/* line 21, ../sass/_regist.scss */
+input {
+  border: 1px solid #ccc;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* line 27, ../sass/_regist.scss */
+p a {
+  text-decoration: none;
+  color: red;
+}
+
+/* line 32, ../sass/_regist.scss */
+input::placeholder {
+  font-size: 12px;
+}
+
+/* line 36, ../sass/_regist.scss */
+#pp {
+  font-size: 12px;
+  margin-left: 130px;
+  margin-top: -20px;
+  color: #999;
+  display: none;
+}
+
+/* line 44, ../sass/_regist.scss */
+#pp span {
+  width: 60px;
+  height: 18px;
+  text-align: center;
+  background-color: #999;
+  color: white;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+/* line 54, ../sass/_regist.scss */
+#yzm {
+  width: 160px;
+}
+
+/* line 58, ../sass/_regist.scss */
+#inp {
+  margin: 25px 20%;
+  background-color: red;
+  font-size: 20px;
+  color: white;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* line 68, ../sass/_regist.scss */
+#inpu {
+  display: inline-block;
+}
+
+/* line 72, ../sass/_regist.scss */
+#sp {
+  width: 110px;
+  height: 40px;
+  margin-left: 10px;
+  color: red;
+  position: absolute;
+  left: 772px;
+  bottom: 110px;
+}
+
+/* line 82, ../sass/_regist.scss */
+#sp1 {
+  font-size: 14px;
+  width: 70px;
+  height: 30px;
+}
+
+/* line 88, ../sass/_regist.scss */
+#sp2 {
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+  color: blue;
+  font-size: 14px;
+}
+
+/* line 96, ../sass/_regist.scss */
+#aaa {
+  position: absolute;
+  right: 566px;
+  bottom: 55px;
+  height: 30px;
+  color: red;
+  width: 60px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+}
