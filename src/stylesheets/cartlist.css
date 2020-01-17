@@ -195,10 +195,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   cursor: move;
   background-color: white;
   border: 1px solid #ccc;
+  vertical-align: middle;
 }
 
-/* line 120, ../sass/_car.scss */
+/* line 121, ../sass/_car.scss */
 #ipt6 {
+  margin: 0;
   width: 30px;
   height: 22px;
   border: none;
@@ -207,9 +209,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 0;
   outline: none;
   border: 1px solid #ccc;
+  vertical-align: middle;
 }
 
-/* line 131, ../sass/_car.scss */
+/* line 134, ../sass/_car.scss */
 .zlist ul .pan_heji {
   width: 120px;
   height: 20px;
@@ -218,7 +221,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-left: 60px;
 }
 
-/* line 139, ../sass/_car.scss */
+/* line 142, ../sass/_car.scss */
 .zlist ul .pan_caozuo {
   width: 120px;
   height: 30px;
@@ -227,7 +230,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-left: 60px;
 }
 
-/* line 147, ../sass/_car.scss */
+/* line 150, ../sass/_car.scss */
 .xm {
   width: 1200px;
   height: 47px;
@@ -238,7 +241,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 30px;
 }
 
-/* line 157, ../sass/_car.scss */
+/* line 160, ../sass/_car.scss */
 .xm .xmleft {
   float: left;
   width: 300px;
@@ -247,13 +250,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 20px;
 }
 
-/* line 164, ../sass/_car.scss */
+/* line 167, ../sass/_car.scss */
 .xm .xmleft span {
   font-size: 14px;
   color: #747474;
 }
 
-/* line 168, ../sass/_car.scss */
+/* line 171, ../sass/_car.scss */
 .xm .xmz {
   width: 300px;
   height: 20px;
@@ -263,14 +266,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 20px;
 }
 
-/* line 176, ../sass/_car.scss */
+/* line 179, ../sass/_car.scss */
 .xm .xmringht {
   width: 420px;
   height: 45px;
   float: right;
 }
 
-/* line 181, ../sass/_car.scss */
+/* line 184, ../sass/_car.scss */
 #zongji {
   display: flex;
   float: left;
@@ -280,7 +283,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-left: 30px;
 }
 
-/* line 189, ../sass/_car.scss */
+/* line 192, ../sass/_car.scss */
 .xm .xmringht .jiesuan {
   width: 100px;
   height: 45px;

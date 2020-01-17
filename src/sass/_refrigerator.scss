@@ -8,11 +8,14 @@
     height: 36px;
     margin-bottom: 13px;
     display: flex;
-    align-items: center;
+    align-items: center;position: relative;
     #sp {
       width: 37px;
       height: 26px;
       display: flex;
+      position: absolute;
+      left: -3px;
+      bottom: 5px;
       justify-content: center;
       align-items: center;
       color: #fff;
@@ -20,7 +23,7 @@
       background: #f90002;
     }
     a {
-      margin-left: 10px;
+      margin-left: 58px;
       font-size: 14px;
       color: #747474;
       text-decoration: none;
@@ -43,6 +46,10 @@
 }
 //左边的结构样式
 #refrigerator {
+  .ringht{
+    width: 620px;
+    height: 567px;
+  }
   .bx_left {
     width: 210px;
     height: 567px;
@@ -55,6 +62,7 @@
   }
 }
 //右边的结构样式
+#refrigerator {
 .bx_ringht {
   width: 978px;
   height: auto;
@@ -140,4 +148,5 @@
     font-size: 14px;
     cursor: pointer;
   }
+}
 }

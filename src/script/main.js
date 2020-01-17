@@ -1,4 +1,9 @@
 import "jquery";
+import "../stylesheets/index.css";
+import "../stylesheets/details.css";
+import "../stylesheets/cartlist.css";
+import "../stylesheets/login.css";
+import "../stylesheets/registry.css";
 
 import {Page} from "./index1.js";//首页
 Page();
