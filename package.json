@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/qixiaobao1999/Gree#readme",
   "dependencies": {
-    "jquery": "^1.12.4"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
